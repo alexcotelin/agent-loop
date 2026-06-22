@@ -44,7 +44,7 @@ def ask_ai_for_code(prompt: str) -> str:
     )
     
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-flash-lite-latest",
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
